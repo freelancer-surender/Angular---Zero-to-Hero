@@ -1,0 +1,14 @@
+<h2>Data Binding</h2>
+
+<div>
+  <input type="text" [(ngModel)]="formValue">
+</div>
+<br>
+<div>
+  {{ formValue }}
+</div>
+<br>
+<br>
+<div>
+  <button [disabled]="isBtnDisabled" (click)="checkForm()">Check form</button>
+</div>
