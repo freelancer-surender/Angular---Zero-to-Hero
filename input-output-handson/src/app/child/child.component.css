@@ -1,0 +1,17 @@
+.child-container {
+    width: 50%;
+    margin: 40px auto;
+}
+
+.item {
+    float: left;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    border: 2px solid #098a9a;
+    color: #098a9a;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
