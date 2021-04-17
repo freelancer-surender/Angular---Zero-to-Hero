@@ -1,0 +1,131 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1 {
+    margin-bottom: 30px;
+}
+
+button {
+    width: 100px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+.square-red {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+.square-green {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}
+
+.square-blue {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+
+.rectangle-red {
+    width: 300px;
+    height: 150px;
+    background-color: red;
+}
+
+.rectangle-green {
+    width: 300px;
+    height: 150px;
+    background-color: green;
+}
+
+.rectangle-blue {
+    width: 300px;
+    height: 150px;
+    background-color: blue;
+}
+
+.circle-red {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.circle-green {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.circle-blue {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.square-yellow {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+}
+
+.square-brown {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+}
+
+.square-orange {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
+
+.rectangle-yellow {
+    width: 300px;
+    height: 150px;
+    background-color: yellow;
+}
+
+.rectangle-brown {
+    width: 300px;
+    height: 150px;
+    background-color: brown;
+}
+
+.rectangle-orange {
+    width: 300px;
+    height: 150px;
+    background-color: orange;
+}
+
+.circle-yellow {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.circle-brown {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    border-radius: 50%;
+}
+
+.circle-orange {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.shape {
+    margin-top: 50px;
+}
