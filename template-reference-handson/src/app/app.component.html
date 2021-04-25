@@ -1,0 +1,12 @@
+<div class="container">
+  <div #heading></div>
+  <div>
+    <input type="text" #textInput (input)="analyzeWord(textInput.value)">
+  </div>
+  <div *ngIf="textInput.value.length  > 0">
+    <h3>Results</h3>
+    <div>Number of characters: {{ textInput.value.length }} </div>
+    <h5>Vowels</h5>
+    <div *ngFor="let vowel of vowels">{{ vowel.letter }}: {{ vowel.count }}</div>
+  </div>
+</div>
