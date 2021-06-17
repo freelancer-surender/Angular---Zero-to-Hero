@@ -1,0 +1,21 @@
+header {
+    padding: 30px;
+    background-color: rgb(32,32,32);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+a.active {
+    color: rgb(0, 255, 255);
+}
