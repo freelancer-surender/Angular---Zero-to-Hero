@@ -1,0 +1,29 @@
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 40px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    color: #ff5722;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .nav-item:hover {
+    color: rgb(97, 189, 12);
+  }
+  

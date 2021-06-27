@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="heading">Template Driven Approach</div>
+  <div class="form-container">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+      <div class="form-group">
+        <label for="uname">Username</label>
+        <input
+          [ngModel]="'WebTechTalk'"
+          name="uname"
+          required
+          type="text"
+          class="form-control"
+          id="uname"
+          #uname="ngModel"
+        />
+        <small *ngIf="!uname.valid && uname.touched"
+          >Username is required</small
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="emailAddress">Email address</label>
+        <input
+          ngModel
+          name="emailAddress"
+          required
+          email
+          type="email"
+          class="form-control"
+          id="emailAddress"
+          #emailAddress="ngModel"
+        />
+        <small
+          *ngIf="
+            emailAddress.errors &&
+            emailAddress.errors.required &&
+            emailAddress.touched
+          "
+          >Email Address is required</small
+        >
+        <small
+          *ngIf="
+            emailAddress.errors &&
+            emailAddress.errors.email &&
+            emailAddress.touched
+          "
+          >Email Address should be valid</small
+        >
+      </div>
+
+      <div class="d-flex">
+        <div class="form-group form-check">
+          <input
+            [ngModel]="true"
+            name="readTerms"
+            type="checkbox"
+            class="form-check-input"
+            id="readTerms"
+          />
+          <label class="form-check-label" for="readTerms"
+            >I have read terms and conditions</label
+          >
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!myForm.valid"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
