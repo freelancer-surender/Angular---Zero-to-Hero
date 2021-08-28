@@ -1,26 +1,68 @@
 <div class="container">
   <div class="heading">Reactive Approach</div>
   <div class="form-container">
-    <form>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label for="uname">Username</label>
-        <input type="text" class="form-control" id="uname" />
+        <input
+          type="text"
+          class="form-control"
+          id="uname"
+          formControlName="uname"
+        />
+        <small *ngIf="!myForm.get('uname').valid && myForm.get('uname').touched"
+          >Username is required</small
+        >
       </div>
 
       <div class="form-group">
         <label for="emailAddress">Email address</label>
-        <input type="email" class="form-control" id="emailAddress" />
+        <input
+          type="email"
+          formControlName="email"
+          class="form-control"
+          id="emailAddress"
+        />
+        <small
+          *ngIf="
+            myForm.get('email').errors &&
+            myForm.get('email').errors.required &&
+            myForm.get('email').touched
+          "
+          >Email Address is required</small
+        >
+        <small
+          *ngIf="
+            myForm.get('email').errors &&
+            myForm.get('email').errors.email &&
+            myForm.get('email').touched
+          "
+          >Email Address should be valid</small
+        >
       </div>
 
       <div class="d-flex">
         <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="readTerms" />
+          <input
+            type="checkbox"
+            formControlName="readTerms"
+            class="form-check-input"
+            id="readTerms"
+          />
           <label class="form-check-label" for="readTerms"
             >I have read terms and conditions</label
           >
         </div>
 
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" (click)="accept()">Accept</button>
+
+        <button
+          type="submit"
+          [disabled]="!myForm.valid"
+          class="btn btn-primary"
+        >
+          Submit
+        </button>
       </div>
     </form>
   </div>
