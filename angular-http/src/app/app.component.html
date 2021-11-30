@@ -1,0 +1,21 @@
+<h1>Angular HTTP Demo</h1>
+<div class="users" *ngIf="!isLoading">
+  <div class="user" *ngFor="let user of users">
+    <div class="user-img">
+      <img
+        [src]="user.avatar_url"
+        alt=""
+      />
+    </div>
+    <div>
+      <div class="user-name">{{ user.login }}</div>
+      <div class="user-btn">
+        <button (click)="goToGithub(user.html_url)">
+          Open Github
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="loader" *ngIf="isLoading">Loading...</div>

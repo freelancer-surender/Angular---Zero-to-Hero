@@ -1,0 +1,109 @@
+.users {
+  margin-top: 20px;
+  .user {
+    display: flex;
+    align-items: center;
+    border: 2px solid orange;
+    margin: 20px;
+    padding: 30px;
+    width: 305px;
+    float: left;
+    .user-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 30px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+    .user-name {
+      font-weight: bold;
+      font-size: 22px;
+    }
+    .user-btn {
+      margin-top: 30px;
+      button {
+        background-color: orangered;
+        color: white;
+        border: 0px;
+        height: 35px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.loading {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: orange;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: orange;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: orange;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
