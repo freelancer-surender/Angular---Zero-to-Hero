@@ -1,0 +1,27 @@
+<h1>Pipes in Angular</h1>
+<div>
+  <h3>Currency Pipe</h3>
+  <div>Amount: {{ amount | currency }}</div>
+  <div>Amount: {{ amount | currency: 'INR' }}</div>
+  <div>Amount: {{ amount | currency: 'EUR' }}</div>
+</div>
+<div>
+  <h3>Case Pipes</h3>
+  <div>Please subscribe to {{ channelName | lowercase }}</div>
+  <div>Please subscribe to {{ channelName | uppercase }}</div>
+  <div>Please subscribe to {{ channelName | titlecase }}</div>
+</div>
+<div>
+  <h3>Percent Pipe</h3>
+  <div>Mark: {{ mark | percent }}</div>
+</div>
+<div>
+  <h3>Date Pipe</h3>
+  <div>Today's Date is {{ today }}</div>
+  <div>Today's Date is {{ today | date }}</div>
+  <div>Today's Date is {{ today | date: 'MM-dd-yyyy' }}</div>
+</div>
+<div>
+  <h3>Custom Pipe</h3>
+  <div class="initials">{{ name | initials }}</div>
+</div>
